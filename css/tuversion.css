@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ /*Header*/
+header {
+    background-color: rgb(194, 166, 130);
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 5%;
+}
+
+/*logo*/
+header h1 {
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 0.5rem;
+    font-size: 2rem;
+
+}
+
+header h3 {
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 5rem;
+    font-size: 1rem;
+}
+
+.whiteBackground {
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 0.1rem;
+}
+/*----------------------------fin logo----------------------------*/
+
+/*menu desplegable*/
+nav {
+    margin-right: 1rem;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: right;
+}
+
+#menu img {
+    width: 40px;
+    height: 40px;
+}
+
+/* items del menu */
+
+#menu ul li {
+    background-color: rgb(194, 166, 130);
+}
+
+
+
+#menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.62rem;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+
+
+#menu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#menu .test a:hover {
+    background: aliceblue;
+    color: black;
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    background: #eee;
+    padding: 0;
+}
+
+
+
+#menu ul ul li {
+    float: none;
+    width: 150px; 
+    
+}
+
+
+
+#menu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+
+
+#menu ul li:hover>ul {
+    display: block;
+} 
+
+body{
+    background-color: rgb(230, 211, 184);
+}
+
+main p{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40rem;
+}
+
+/*footer*/
+footer {
+    background-color: rgb(194, 166, 130);
+}
+
+footer .newsletter{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+footer .footerDesc {
+    display: grid;
+    grid-template-areas: "rights terms design";
+}
+
+footer .rights{
+    margin-left: 20px;
+    grid-area: rights;
+}
+
+footer .design{   
+    text-align: right;
+    margin-right: 20px;
+    grid-area: design;
+}
+
+footer .terms{
+    text-align: center;
+    grid-area: terms;
+}
