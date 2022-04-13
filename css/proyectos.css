@@ -161,17 +161,48 @@ main h2{
 .imagenes .img1{
     width: 40%;
 }
+.imagenes .img1:active{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    position: absolute;
+    right: 170px;
+    top: 282px;
+}
 
 .imagenes .img2{
     width: 46.9%;
+}
+
+.imagenes .img2:active:active{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    position: absolute;
+    right: 120px;
+    top: 232px;
 }
 
 .imagenes .img3{
     width: 44%;
 }
 
+.imagenes .img3:active{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    position: absolute;
+    right: 130px;
+    top: 255px;
+}
+
 .imagenes .img4{
     width: 42.9%;
+}
+
+.imagenes .img4:active{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    position: absolute;
+    right: 150px;
+    top: 255px;
 }
 
 /*footer*/
