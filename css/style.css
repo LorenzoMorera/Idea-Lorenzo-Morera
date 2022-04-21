@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
- /*Header*/
+ /*Header poner aca
 header {
     background-color: rgb(194, 166, 130);
 
@@ -11,7 +11,7 @@ header {
     margin-bottom: 5%;
 }
 
-/*logo*/
+/*logo poner aca
 header h1 {
     color: aliceblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -34,7 +34,7 @@ header h3 {
 }
 /*----------------------------fin logo----------------------------*/
 
-/*menu desplegable*/
+/*menu desplegable poner aca
 nav {
     margin-right: 1rem;
 }
@@ -58,7 +58,7 @@ nav {
     height: 40px;
 }
 
-/* items del menu */
+/* items del menu poner aca
 
 #menu ul li {
     background-color: rgb(194, 166, 130);
@@ -123,7 +123,7 @@ nav {
 
 #menu ul li:hover>ul {
     display: block;
-} 
+} */
 
 /*---------------------------fin menu------------------------------*/
 body{

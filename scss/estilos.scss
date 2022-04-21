@@ -1,0 +1,86 @@
+@import "scss/variables";
+
+header{
+    background-color: $fondo-principal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 5%;
+    nav{
+        margin-right: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            color: $letra-principal-logo;
+            font-family: $letra-logo;
+            padding-left: 0.5rem;
+            font-size: 2rem;
+        }
+        h3{
+            color: black;
+            font-family: $letra-logo;
+            padding-left: 5rem;
+            font-size: 1rem;
+            .white-background{
+            background-color: aliceblue;
+            border-radius: 5px;
+            padding: 0.1rem;
+            }
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: right;
+            li{
+                background-color: $fondo-principal;
+                position: relative;
+                float: left;
+                margin: 0;
+                padding: 0;
+                &:hover>ul{
+                    display: block;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                ul{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: auto;
+                    right: 0;
+                    background: #eee;
+                    padding: 0;
+                    li{
+                        float: none;
+                        width: 150px; 
+                        a{
+                            display: block;
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: 1rem;
+                            padding: 0.62rem;
+                            font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            line-height: 120%;
+                            padding: 10px 15px;
+                        
+                            &:hover{
+                                background: aliceblue;
+                                color: black;
+                            }
+                          
+                        }
+                    }
+                }
+            }
+            
+        }
+    
+    }
+
+}
