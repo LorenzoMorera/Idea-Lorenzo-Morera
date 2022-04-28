@@ -18,12 +18,12 @@ header {
       font-family: cambria, cochin, Georgia, Times, "Times New Roman", serif;
       padding-left: 0.5rem;
       font-size: 2rem; }
-    header nav h3 {
+    header nav h2 {
       color: black;
       font-family: cambria, cochin, Georgia, Times, "Times New Roman", serif;
       padding-left: 5rem;
       font-size: 1rem; }
-      header nav h3 .white-background {
+      header nav h2 .white-background {
         background-color: aliceblue;
         border-radius: 5px;
         padding: 0.1rem; }
@@ -106,8 +106,9 @@ header {
               
               .texto1 p{
                   padding-top: 10px;
-                  
-                  
+              }
+              .texto1 p span{
+                display: block;
               }
               
               .imagen1 {
@@ -200,7 +201,7 @@ header {
               margin-bottom: 30rem;
           }
           
-          main .h1-contacto{
+          main .h2-contacto{
               text-align: center;
               margin-bottom: 5rem;
           }
