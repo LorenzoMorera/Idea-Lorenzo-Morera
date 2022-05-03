@@ -1,14 +1,19 @@
 @import "scss/variables";
+*{
+    margin: 0;
+    padding: 0;
+}
 /*Header de todas las pages*/
 body{
     background-color: rgb(230, 211, 184);   
     header{
         background-color: $fondo-principal;
         padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 3rem;
         margin-bottom: 5%;
         nav{
             margin-right: 1rem;
+            margin-top: 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -21,7 +26,7 @@ body{
             h2{
                 color: black;
                 font-family: $letra-logo;
-                padding-left: 5rem;
+                margin-left: 5rem;
                 font-size: 1rem;
                 .white-background{
                 background-color: aliceblue;
@@ -81,8 +86,8 @@ body{
             }
         }
     }
+    /*index*/
     main{
-        /*index*/
         .main{
             display: grid;
             grid-template-areas: "texto1 texto1 imagen1 imagen1"
@@ -130,8 +135,231 @@ body{
                 text-align: center;
                 p{
                     padding-top: 10px;
-                }/*Linea 137 del main.css*/
+                }
+            }
+        }
+        /*proyectos*/
+        .titulo-proyectos {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .proyecto1{
+            width: 80%;
+            margin: 0 10%;
+            display: grid;
+            grid-template-areas: "texto texto imagenes imagenes"
+                                "boton boton boton boton";
+            .texto{                
+            grid-area: texto;
+            margin-right: 10px;
+            padding-left: px;
+            }
+            .boton{
+                grid-area: boton;
+            }
+            .imagenes{
+                grid-area: imagenes;
+                width: 100%;
+                .img1{
+                    width: 100%;
+                }
+                .img2{
+                    width: 100%;
+                }
+                .img3{
+                    width: 100%;
+                }
+                .img4{
+                    width: 100%;
+                }
+            }
+        }
+            /*nosotros*/
+        .main-nosotros{
+            margin-left: 10%;
+            margin-right: 10%;
+            h2{
+                text-align: center;
+                margin-bottom: 5rem;
+            }
+            .texto{
+                display: flex;
+                justify-content: center;
+            }
+        }
+            /*tu version*/
+        .proximamente{
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 40rem;
+        }
+        .main-contacto{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30rem;
+        }
+        .h2-contacto{
+            text-align: center;
+            margin-bottom: 5rem;
+            }
+        }
+
+    }
+
+    footer{
+        background-color: $fondo-principal;
+        width: 100%;
+        .newsletter{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: right;
+        }
+        .footerDesc{
+            display: grid;
+            grid-template-areas: "rights terms terms design";
+            .rights{
+                margin-left: 20px;
+                grid-area: rights;
+            }
+            .design{
+                text-align: right;
+                margin-right: 20px;
+                grid-area: design;
+            }
+            .terms{
+                text-align: center;
+                grid-area: terms;
             }
         }
     }
-}
+
+/*@media only screen and (max-width: 1110px) {
+                  .main{
+                      display: grid;
+                      grid-template-areas: "texto1"
+                                           "imagen1"
+                                           "texto2";
+                      
+                      justify-content: center;
+                      width: 90%;
+                      margin: 5%;
+                     
+                  }
+                  .imagen1{
+                      width: 60%;
+                      margin-right: 20%;
+                      margin-left: 20%;
+                  }
+                  footer .newsletter{
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                    margin-right: 5%;
+                    margin-left: 5%;
+                    display: flex;
+                    justify-content: center;
+                    width: 90%;}
+                  footer .newsletter .input{
+                      width: 200px;
+                      height: 20px;
+                      border-radius: 20px;
+                      border-color: transparent;
+                      text-align: center;
+                    }
+                  footer .newsletter .boton{
+                    height: 23px;
+                    width: 200px;
+                    color: black;
+                    background-color: white;
+                    border-color: transparent;
+                    border-radius: 20px;
+                    display: block;
+                    margin-top: 5px;
+                    border: 0px;
+                  }
+                  footer .newsletter p{
+                    text-align: center;
+                  }
+                  footer .footerDesc{
+                    display: grid;
+                    grid-template-areas: "terms"
+                                         "rights"
+                                         "design";
+                  }
+                  footer .rights{
+                    width: 100%;
+                    text-align: center;
+                    margin: 0%;
+                    padding: 5px;
+                  }
+                  footer .design{
+                    width: 100%;
+                    text-align: center;
+                    margin: 0%;
+                  }
+                  footer .terms{
+                    width: 100%;
+                    text-align: center;
+                  }
+                  .proyecto1 {
+                    width: 80%;
+                    margin: 0 10%;
+                   display: grid;
+                   grid-template-areas: "texto"
+                                        "boton"
+                                        "imagenes";
+                }
+                
+                .proyecto1 .texto {
+                    grid-area: texto;
+                    margin-right: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .proyecto1 .texto span{
+                  display: block;
+                  padding-top: 5px;
+                }
+                
+                .proyecto1 .planos{
+                    grid-area: boton;
+                    margin: 10px 0px;
+                    width: 100%;
+                    background-color: black;
+                    color: white;
+                    border: 0px;
+                    height: 30px;
+
+                }
+                
+                .imagenes {
+                    grid-area: imagenes;
+                    width: 100%;
+                    text-align: center;
+                }
+                
+                .imagenes .img1{
+                    width: 60%;
+                    
+              
+                }
+                
+                
+                .imagenes .img2{
+                    width: 60%;
+                }
+                
+                
+                
+                .imagenes .img3{
+                    width: 60%;
+                }
+                
+                
+                
+                .imagenes .img4{
+                    width: 60%;
+                }
+                
+                
+              }*/
