@@ -7,14 +7,14 @@
     <meta name="keywords" content="casas, construccion, constructora, argentina, materiales, proyectos, diseño, innovación, morera, rapidez, ambientes, baños, habitaciones, escaleras, madera, piedra, vivienda, hogar,inicio,edificaciones, estilos, automatización, playa, costa, moderno,propiedad, imagenes, planos">
     <meta name="description" content="Encontra tu casa soñada en alguno de nuestros proyectos, y convertirte en dueño de tu propio hogar">
     <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Proyecto | MORERA constructora</title>
 </head>
 <body>
   <header>
     <nav id="menu">
       <div>
-        <h1>MORERA</h1>
-        <h2><span class="white-background">Constructora</span></h2>
+        <a href="../index.html"><img src="../img/logo.png" alt=""></a>
       </div>
       <ul>
         <li><img src="../img/botonMenu.png" alt="">
@@ -29,38 +29,47 @@
       </ul>
     </nav>
   </header>
-    <main>
-        <h2 class="titulo-proyectos">Proyectos...</h2>
-        <div class="proyecto1">
-            <div class="texto">
-                <h3>Geranios</h3>
-                <p>Proyecto Ubicado en el Partido de la Costa argentina, mas especificamente en 'Costa del Este'. Actualmente se encuantra en la fase1 de construccion, esta comenzo hace 10 dias y va avanzando dia a dia. lo que caracteriza este proyecto es el diseño moderno y la elegancia de los materiales. <span>La propiedad cuenta con medidas de 132m2 de superficie cubierta, teniendo en cuanta tambien parte semi-cubierta. La planta baja posee una cocina comedor, una sala de estar, la cual esta un nivel mas bajo del nivel del piso, tambien este piso cuenta con un dormitorio en suit, un toilette, un lavader, y saliendo por la cocina, un quincho-parrilla de 19m2 semi-cubiertos. Luego subiendo por la escalera no encontramos con un baño, y a sus lados 2 habitaciones simples.</span>
-                <span>Mas alla de los materiales de calidad, lo caracteriza tambien a esta propiedad es su ubicacion, a solo 600 metros de la playa y 400 del centro de 'Costa del Este'. Una Zona de pinos y arboles de gran tamaño rodean la propiedad y le dan una sombra ideal para las epocas de calor, como tambien le da una zona de reparo del viento para cuando las temperaturas son mas bajas.</span>   
-                </p> 
+  <main>
+    <h2 class="titulo">PROYECTOS</h2>
+    <div class="accordion proyecto-geranios" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Proyecto Geranios
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              Proyecto Ubicado en el Partido de la Costa argentina, mas especificamente en 'Costa del Este'. Actualmente se encuantra en la fase1 de construccion, esta comenzo hace 10 dias y va avanzando dia a dia. lo que caracteriza este proyecto es el diseño moderno y la elegancia de los materiales. <span>La propiedad cuenta con medidas de 132m2 de superficie cubierta, teniendo en cuanta tambien parte semi-cubierta. La planta baja posee una cocina comedor, una sala de estar, la cual esta un nivel mas bajo del nivel del piso, tambien este piso cuenta con un dormitorio en suit, un toilette, un lavader, y saliendo por la cocina, un quincho-parrilla de 19m2 semi-cubiertos. Luego subiendo por la escalera no encontramos con un baño, y a sus lados 2 habitaciones simples.</span>
+              <span>Mas alla de los materiales de calidad, lo caracteriza tambien a esta propiedad es su ubicacion, a solo 600 metros de la playa y 400 del centro de 'Costa del Este'. Una Zona de pinos y arboles de gran tamaño rodean la propiedad y le dan una sombra ideal para las epocas de calor, como tambien le da una zona de reparo del viento para cuando las temperaturas son mas bajas.</span>   
+            </p>
+            <div class="accordion-img">
+            <img src="../img/Frente.jpg" alt="" class="Geranios1">
+            <img src="../img/atras.jpeg" alt="" class="Geranios2">
+            <img src="../img/costado-izquierdo.jpeg" alt="" class="Geranios3">
+            <img src="../img/costado-derecho.jpeg" alt="" class="Geranios4">
             </div>
-            <div class="imagenes">
-                <div>
-                    <img src="../img/Frente.jpg" alt="" class="img1">
-                    <img src="../img/atras.jpeg" alt="" class="img2">
-                </div>
-                <div>
-                    <img src="../img/costado-izquierdo.jpeg" alt="" class="img3">
-                    <img src="../img/costado-derecho.jpeg" alt="" class="img4">
-                </div>
-            </div>
-            <div class="boton">
-                <form>
-                    <a href="">
-                       <input type="button" value="Ver planos" class="planos">
-                    </a>
-                </form>
-            </div>
+            <div class="planos-geranios">
+              <form>
+                  <a href="">
+                     <input type="button" value="Ver planos" class="planos">
+                  </a>
+              </form>
+          </div>
+          <div class="consulta">
+            <form>
+                <a href="Contacto.html">
+                   <input type="button" value="Hace tu consulta" class="hace-tu-consulta">
+                </a>
+            </form>
         </div>
-      </main>
-      <footer>
-        <div>
-          
+          </div>
         </div>
+      </div>
+    </div>
+  </main>
+  <footer>
         <div class="newsletter">
           <form action="" class="">
             <p> Newsletter </p>
@@ -68,7 +77,7 @@
             <input type="submit" class="boton"/>
           </form>
         </div>
-        <div class="footerDesc">
+        <div class="footer-desc">
           <div class="rights">
           <p>
             All rights resreved
@@ -83,7 +92,7 @@
             <p>Web Design by Lorenzo Morera</p>
           </div>
         </div>
-      </footer>
-
-</body>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

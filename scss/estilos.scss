@@ -1,365 +1,326 @@
 @import "scss/variables";
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 /*Header de todas las pages*/
-body{
-    background-color: rgb(230, 211, 184);   
-    header{
-        background-color: $fondo-principal;
-        padding-top: 1rem;
-        padding-bottom: 3rem;
-        margin-bottom: 5%;
-        nav{
-            margin-right: 1rem;
-            margin-top: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            h1{
-                color: $letra-principal-logo;
-                font-family: $letra-logo;
-                padding-left: 0.5rem;
-                font-size: 2rem;
-            }
-            h2{
-                color: black;
-                font-family: $letra-logo;
-                margin-left: 5rem;
-                font-size: 1rem;
-                .white-background{
-                background-color: aliceblue;
-                border-radius: 5px;
-                padding: 0.1rem;
-                }
-            }
-            ul {
-                list-style: none;
+html {
+    min-height: 100%;
+    position: relative;
+    body {
+        background-color: rgb(230, 211, 184);
+        width: 100%;
+        height: 100%;
+
+        header {
+            background-color: $fondo-principal;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+            
+            width: 100%;
+
+            nav {
+                margin-right: 1rem;
+                margin-top: 1rem;
                 display: flex;
-                margin: 0;
-                padding: 0;
-                justify-content: right;
-                li{
-                    background-color: $fondo-principal;
-                    position: relative;
-                    float: left;
+                justify-content: space-between;
+                align-items: center;
+
+                img{
+                    width: 80%;
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
                     margin: 0;
                     padding: 0;
-                    &:hover>ul{
-                        display: block;
-                    }
-                    img {
-                        width: 40px;
-                        height: 40px;
-                    }
-                    ul {
-                        display: none;
-                        position: absolute;
-                        top: 100%;
-                        left: auto;
-                        right: 0;
-                        background: #eee;
+                    justify-content: right;
+
+                    li {
+                        background-color: $fondo-principal;
+                        position: relative;
+                        float: left;
+                        margin: 0;
                         padding: 0;
-                        li{
-                            float: none;
-                            width: 150px; 
-                            a{
-                                display: block;
-                                color: #fff;
-                                text-decoration: none;
-                                font-size: 1rem;
-                                padding: 0.62rem;
-                                font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                                text-transform: uppercase;
-                                letter-spacing: 1px;
-                                line-height: 120%;
-                                padding: 10px 15px;                       
-                                &:hover{
-                                    background: aliceblue;
-                                    color: black;
+
+                        &:hover>ul {
+                            display: block;
+                        }
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        ul {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: auto;
+                            right: 0;
+                            background: #eee;
+                            padding: 0;
+
+                            li {
+                                float: none;
+                                width: 150px;
+
+                                a {
+                                    display: block;
+                                    color: #fff;
+                                    text-decoration: none;
+                                    font-size: 1rem;
+                                    padding: 0.62rem;
+                                    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    line-height: 120%;
+                                    padding: 10px 15px;
+
+                                    &:hover {
+                                        background: aliceblue;
+                                        color: black;
+                                    }
                                 }
                             }
                         }
                     }
-                }   
-            }
-        }
-    }
-    /*index*/
-    main{
-        .main{
-            display: grid;
-            grid-template-areas: "texto1 texto1 imagen1 imagen1"
-                                 "texto2 texto2 texto2 texto2"; 
-            justify-content: center;
-            width: 80%;
-            margin: 10%;
-            .texto1{
-                grid-area: texto1;
-                text-align: center;
-                margin-right: 10px;
-                margin-bottom: 10px;
-                .titulo{
-                    display: flex;
-                    justify-content: center;
-                }
-                .texto{
-                    display: flex;
-                    justify-content: center;
-                }
-                h3{
-                    padding: 10px;
-                }
-                p{
-                    padding-top: 10px;
-                }
-            }
-            .imagen1 {
-                grid-area: imagen1;
-                width: 100%;
-                overflow: hidden;
-                img{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    &:hover{
-                        -webkit-transform: scale(1.3);
-                         transform: scale(1.3);
-                    }
-                }                
-            }
-            .texto2{
-                grid-area: texto2;
-                margin-top: 30px;
-                text-align: center;
-                p{
-                    padding-top: 10px;
                 }
             }
         }
-        /*proyectos*/
-        .titulo-proyectos {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .proyecto1{
-            width: 80%;
-            margin: 0 10%;
-            display: grid;
-            grid-template-areas: "texto texto imagenes imagenes"
-                                "boton boton boton boton";
-            .texto{                
-            grid-area: texto;
-            margin-right: 10px;
-            padding-left: px;
-            }
-            .boton{
-                grid-area: boton;
-            }
-            .imagenes{
-                grid-area: imagenes;
-                width: 100%;
-                .img1{
-                    width: 100%;
-                }
-                .img2{
-                    width: 100%;
-                }
-                .img3{
-                    width: 100%;
-                }
-                .img4{
-                    width: 100%;
-                }
-            }
-        }
-            /*nosotros*/
-        .main-nosotros{
+
+        /*index*/
+        main {
+            margin-top: 3rem;
+            margin-bottom: 10rem;
             margin-left: 10%;
             margin-right: 10%;
-            h2{
-                text-align: center;
-                margin-bottom: 5rem;
+            display: block;
+           
+            
+            
+            .index-content{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
             }
-            .texto{
+            .index-video{
+                display: inline-block;
+                width: 45%;
+            }
+            .index-texto{
+                display: inline-block;
+                width: 45%;
+                
+                span{
+                    display: block;
+                }
+                p{
+                    font-size: 1.7rem;
+                    padding-top: 1rem;
+                }
+                .ir-a-proyectos{
+                    width: 40%;
+                    height: 60px;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    background-color: darkgray;
+                    border-color: rgb(98, 94, 94);
+                    border-radius: 10px;
+                    margin-top: 3rem;
+                    
+                }
+            }
+
+
+            /*proyectos*/
+            .titulo {
+                text-align: center;
+                margin-bottom: 1rem;
+                font-size: 3rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: underline;
+            }
+
+            span {
+                display: block;
+            }
+            .proyecto-geranios{
+                margin-bottom: 10rem;
+            }
+            .accordion-img {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .Geranios1 {
+                width: 20%;
+                text-align: center;
+            }
+
+            .Geranios2 {
+                width: 23.5%;
+                text-align: center;
+            }
+
+            .Geranios3 {
+                width: 23.5%;
+            }
+
+            .Geranios4 {
+                width: 23.5%;
+            }
+
+            .planos-geranios {
+                margin-top: 1rem;
+            }
+
+            .consulta {
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            .hace-tu-consulta {
+                width: 95%;
+                background-color: black;
+                color: white;
+                height: 50px;
+                border-radius: 10px;
+            }
+
+            /*nosotros*/
+            .texto-nosotros{
+                    font-size: $Tamaño-Letra-principal ;
+            }
+                
+            
+
+            /*tu version*/
+            .card {
+               display: inline-block;
+               margin: 2.3%; 
+               width: 20%;
+               img{
+                   width: 100%;
+               }
+            }
+            .texto-tu-version{
+                font-size: $Tamaño-Letra-principal ;
+            }
+
+            .nombre-y-apellido {
                 display: flex;
                 justify-content: center;
+                margin: 1rem auto;  
+                div{
+                    display: block;
+                    width: 90%;
+                    margin: 0 auto;
+                    span{
+                        display: block;
+                        width: 90%;
+                        margin: 0 auto;
+                        p{
+                            font-size: $Tamaño-Letra-principal ;
+                        }
+                    }
+                    input{
+                        width: 100%;
+                        height: 2rem;
+                    }
+                }        
+                }
+            .email{
+                display: flex;
+                justify-content: center;
+                margin: 1rem auto;
+                div{
+                    display: block;
+                    justify-content: center;
+                    width: 100%;
+                    margin: 0 auto;
+                    span{
+                        display: block;
+                        width: 95%;
+                        margin: 0 auto;
+                        p{
+                            font-size: $Tamaño-Letra-principal ;
+                        }
+                    }
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        input{
+                            width: 95%;
+                            height: 2rem;
+                            margin: auto;
+                        
+                        }
+                    }
+                }
+            }
+            .boton-formulario{
+                display: flex;
+                justify-content: space-around;
+                margin: 0 auto;
+                input{
+                    width: 40%;
+                    height: 2rem;
+                }
             }
         }
-            /*tu version*/
-        .proximamente{
-            font-size: 4rem;
-            text-align: center;
-            margin-bottom: 40rem;
-        }
-        .main-contacto{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30rem;
-        }
-        .h2-contacto{
-            text-align: center;
-            margin-bottom: 5rem;
-            }
-        }
-
     }
-
-    footer{
+}
+    footer {
         background-color: $fondo-principal;
         width: 100%;
-        .newsletter{
+        bottom: 0;
+        position: fixed;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: normal;
+        font-weight: 100;
+        padding: 0;
+        
+        
+        
+        .newsletter {
             margin-bottom: 20px;
             margin-top: 10px;
             display: flex;
             justify-content: right;
+            padding-right: 20px;
+            p{
+                margin: 0;
+            }
         }
-        .footerDesc{
+
+        .footer-desc {
             display: grid;
             grid-template-areas: "rights terms terms design";
-            .rights{
+
+            .rights {
                 margin-left: 20px;
                 grid-area: rights;
             }
-            .design{
+
+            .design {
                 text-align: right;
                 margin-right: 20px;
                 grid-area: design;
             }
-            .terms{
+
+            .terms {
                 text-align: center;
                 grid-area: terms;
+                a{
+                    color: #0d6efd;
+                }
             }
         }
     }
 
-/*@media only screen and (max-width: 1110px) {
-                  .main{
-                      display: grid;
-                      grid-template-areas: "texto1"
-                                           "imagen1"
-                                           "texto2";
-                      
-                      justify-content: center;
-                      width: 90%;
-                      margin: 5%;
-                     
-                  }
-                  .imagen1{
-                      width: 60%;
-                      margin-right: 20%;
-                      margin-left: 20%;
-                  }
-                  footer .newsletter{
-                    margin-bottom: 20px;
-                    margin-top: 10px;
-                    margin-right: 5%;
-                    margin-left: 5%;
-                    display: flex;
-                    justify-content: center;
-                    width: 90%;}
-                  footer .newsletter .input{
-                      width: 200px;
-                      height: 20px;
-                      border-radius: 20px;
-                      border-color: transparent;
-                      text-align: center;
-                    }
-                  footer .newsletter .boton{
-                    height: 23px;
-                    width: 200px;
-                    color: black;
-                    background-color: white;
-                    border-color: transparent;
-                    border-radius: 20px;
-                    display: block;
-                    margin-top: 5px;
-                    border: 0px;
-                  }
-                  footer .newsletter p{
-                    text-align: center;
-                  }
-                  footer .footerDesc{
-                    display: grid;
-                    grid-template-areas: "terms"
-                                         "rights"
-                                         "design";
-                  }
-                  footer .rights{
-                    width: 100%;
-                    text-align: center;
-                    margin: 0%;
-                    padding: 5px;
-                  }
-                  footer .design{
-                    width: 100%;
-                    text-align: center;
-                    margin: 0%;
-                  }
-                  footer .terms{
-                    width: 100%;
-                    text-align: center;
-                  }
-                  .proyecto1 {
-                    width: 80%;
-                    margin: 0 10%;
-                   display: grid;
-                   grid-template-areas: "texto"
-                                        "boton"
-                                        "imagenes";
-                }
-                
-                .proyecto1 .texto {
-                    grid-area: texto;
-                    margin-right: 10px;
-                    width: 100%;
-                    text-align: center;
-                }
-                .proyecto1 .texto span{
-                  display: block;
-                  padding-top: 5px;
-                }
-                
-                .proyecto1 .planos{
-                    grid-area: boton;
-                    margin: 10px 0px;
-                    width: 100%;
-                    background-color: black;
-                    color: white;
-                    border: 0px;
-                    height: 30px;
 
-                }
-                
-                .imagenes {
-                    grid-area: imagenes;
-                    width: 100%;
-                    text-align: center;
-                }
-                
-                .imagenes .img1{
-                    width: 60%;
-                    
-              
-                }
-                
-                
-                .imagenes .img2{
-                    width: 60%;
-                }
-                
-                
-                
-                .imagenes .img3{
-                    width: 60%;
-                }
-                
-                
-                
-                .imagenes .img4{
-                    width: 60%;
-                }
-                
-                
-              }*/
